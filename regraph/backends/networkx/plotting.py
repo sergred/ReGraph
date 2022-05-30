@@ -373,7 +373,7 @@ def plot_rule(rule, filename=None, title=None):
     _set_limits(all_pos, all_label_pos)
     nx.draw_networkx_nodes(rule.lhs._graph, lhs_pos,
                            node_color=lhs_colors,
-                           node_size=100, arrows=True)
+                           node_size=100)
     nx.draw_networkx_edges(rule.lhs._graph, lhs_pos, alpha=0.4, node_size=100)
     nx.draw_networkx_labels(rule.lhs._graph, lhs_label_pos, lhs_labels, font_size=11)
 
@@ -383,7 +383,7 @@ def plot_rule(rule, filename=None, title=None):
     _set_limits(all_pos, all_label_pos)
     nx.draw_networkx_nodes(rule.p._graph, p_pos,
                            node_color=p_colors,
-                           node_size=100, arrows=True)
+                           node_size=100)
     nx.draw_networkx_edges(rule.p._graph, p_pos, alpha=0.4, node_size=100)
     nx.draw_networkx_labels(rule.p._graph, p_label_pos, p_labels, font_size=11)
 
@@ -393,7 +393,7 @@ def plot_rule(rule, filename=None, title=None):
     _set_limits(all_pos, all_label_pos)
     nx.draw_networkx_nodes(rule.rhs._graph, rhs_pos,
                            node_color=rhs_colors,
-                           node_size=100, arrows=True)
+                           node_size=100)
     nx.draw_networkx_edges(rule.rhs._graph, rhs_pos, alpha=0.4, node_size=100)
     nx.draw_networkx_labels(rule.rhs._graph, rhs_label_pos, rhs_labels, font_size=11)
 
